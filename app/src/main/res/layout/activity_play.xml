@@ -7,4 +7,51 @@
     android:background="@drawable/bg"
     tools:context=".Play">
 
+    <Button
+        android:id="@+id/play"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="444dp"
+        android:backgroundTint="@color/white"
+        android:text="Play chords"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/strummingpattern"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="232dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Strumming Pattern"
+        android:inputType="none"
+        android:textColor="@color/black"
+        android:textColorHint="#696969"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/chordprogression"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="340dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Chord progression"
+        android:inputType="none"
+        android:textColor="@color/black"
+        android:textColorHint="#696969"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
