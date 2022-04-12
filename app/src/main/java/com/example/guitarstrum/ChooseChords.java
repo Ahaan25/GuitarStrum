@@ -2,6 +2,7 @@ package com.example.guitarstrum;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,9 +20,17 @@ public class ChooseChords extends AppCompatActivity {
         addchord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                addchords();
             }
         });
 
     }
+
+
+
+    public void addchords(){
+        Intent intent=new Intent(this, Play.class);
+        startActivity(intent);
+    }
+
 }
