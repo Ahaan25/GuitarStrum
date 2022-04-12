@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
     Button addchords;
     Button clear;
     Button addstrum;
+    Button up;
+    Button down;
+    Button slap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +47,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        up=findViewById(R.id.up);
+        down=findViewById(R.id.down);
+        slap=findViewById(R.id.slap);
+
+        up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addupstroke();
+            }
+        });
+
+        down.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                adddownstroke();
+            }
+        });
+
+        slap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addslap();
+            }
+        });
     }
 
     public void AddStrum(){
@@ -53,5 +80,17 @@ public class MainActivity extends AppCompatActivity {
     public void openChooseChords(){
         Intent intent=new Intent(this, ChooseChords.class);
         startActivity(intent);
+    }
+
+    public void addupstroke(){
+
+    }
+
+    public void adddownstroke(){
+
+    }
+
+    public void addslap(){
+
     }
 }
