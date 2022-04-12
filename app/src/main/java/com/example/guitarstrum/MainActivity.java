@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     Button up;
     Button down;
     Button slap;
+    int cntup;
+    int cntdown;
+    int cntslap;
+    int strum=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                strm.setText(null);
+                clearstrum();
             }
         });
 
@@ -73,8 +77,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void clearstrum(){
+        strm.setText(null);
+        strum=0;
+        cntup=0;
+        cntdown=0;
+        cntslap=0;
+    }
+
     public void AddStrum(){
-        strm.setText("a");
+        strum=cntup+cntslap+cntdown;
+        strm.setText("Total strums: "+Integer.toString(strum));
     }
 
     public void openChooseChords(){
@@ -83,14 +96,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addupstroke(){
+        cntup++;
+        strm.setText("Up: "+Integer.toString(cntup));
 
     }
 
     public void adddownstroke(){
-
+        cntdown++;
+        strm.setText("Down: "+Integer.toString(cntdown));
     }
 
     public void addslap(){
-
+        cntslap++;
+        strm.setText("Slap: "+Integer.toString(cntslap));
     }
 }
