@@ -61,7 +61,7 @@
         android:background="@color/white"
         android:ems="10"
         android:gravity="center"
-        android:hint="Strumming pattern"
+        android:hint="Strum pattern(down up slap)"
         android:inputType="none"
         android:textColor="@color/black"
         android:textColorHint="#696969"
