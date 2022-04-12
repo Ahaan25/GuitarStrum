@@ -14,14 +14,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="156dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="296dp"
         android:backgroundTint="@color/white"
         android:text="Add strumming pattern"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/up"
@@ -30,7 +29,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="131dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/white"
         android:text="Up stroke"
         android:textColor="@color/black"
@@ -45,11 +44,12 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="124dp"
         android:backgroundTint="@color/white"
         android:text="Down stroke"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,7 +58,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="208dp"
         android:backgroundTint="@color/white"
         android:text="Slap"
         android:textColor="@color/black"
@@ -73,13 +73,13 @@
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="540dp"
         android:backgroundTint="@color/white"
         android:text="Clear"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/StrumPattern"
@@ -87,7 +87,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="396dp"
         android:background="@color/white"
         android:ems="10"
         android:gravity="center"
