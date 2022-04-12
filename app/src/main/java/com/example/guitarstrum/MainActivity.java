@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     EditText strm;
     Button addchords;
     Button clear;
+    Button addstrum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +36,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        addstrum=findViewById(R.id.addstrum);
+        addstrum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AddStrum();
+            }
+        });
+
+    }
+
+    public void AddStrum(){
+        strm.setText("a");
     }
 
     public void openChooseChords(){
