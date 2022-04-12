@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
     public void openChooseChords(){
         Intent intent=new Intent(this, ChooseChords.class);
         startActivity(intent);
+
     }
 
     public void addupstroke(){

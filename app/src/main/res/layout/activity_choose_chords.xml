@@ -26,7 +26,7 @@
         android:layout_marginStart="264dp"
         android:layout_marginTop="636dp"
         android:backgroundTint="@color/white"
-        android:text="Add Chords"
+        android:text="Show chords"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

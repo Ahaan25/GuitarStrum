@@ -78,7 +78,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="304dp"
         android:backgroundTint="@color/white"
-        android:text="Add strum pattern"
+        android:text="Show strum pattern"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
