@@ -87,7 +87,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void AddStrum(){
         strum=cntup+cntslap+cntdown;
-        strm.setText("Total strums: "+Integer.toString(strum));
+        //strm.setText("Total strums: "+Integer.toString(strum));
+        strm.setText("Strum pattern is: "+cntdown+cntup+cntslap);
     }
 
     public void openChooseChords(){
