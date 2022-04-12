@@ -9,13 +9,13 @@ import android.os.Handler;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private static int SP=1000;
+    private static int t=1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        MediaPlayer startupsound=MediaPlayer.create(this, R.raw.startupsound);
-        startupsound.start();
+        MediaPlayer strtupsnd=MediaPlayer.create(this, R.raw.startupting);
+        strtupsnd.start();
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
@@ -23,6 +23,6 @@ public class SplashScreen extends AppCompatActivity {
                 startActivity(homeIntent);
                 finish();
             }
-        }, SP);
+        }, t);
     }
 }
