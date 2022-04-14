@@ -7,11 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class Play extends AppCompatActivity {
-    EditText strum;
-    EditText chords;
+    TextView strum;
+    TextView chords;
     Button play;
+    String strum3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,15 +23,9 @@ public class Play extends AppCompatActivity {
         strum=findViewById(R.id.strummingpattern);
         chords=findViewById(R.id.chordprogression);
         play=findViewById(R.id.play);
-        strum.setText("Strum pattern is: "+cntdown+cntup+cntslap);
+        //strum.setText("Strum pattern is: "+cntdown+cntup+cntslap);
+        strum3=getIntent().getStringExtra("Strum Pattern: ");
+        strum.setText(strum3);
 
-        /*
-        play.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(ChooseChords.this, Play.class);
-            }
-        });
-         */
     }
 }

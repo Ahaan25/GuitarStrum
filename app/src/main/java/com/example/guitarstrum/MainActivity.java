@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText strm;
+    TextView strm;
     Button addchords;
     Button clear;
     Button addstrum;
@@ -20,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
     int cntup;
     int cntdown;
     int cntslap;
-    int strum=0;
+    String strum1;
+    String strum="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,17 +83,22 @@ public class MainActivity extends AppCompatActivity {
 
     public void clearstrum(){
         strm.setText(null);
-        strum=0;
+        strum="";
         cntup=0;
         cntdown=0;
         cntslap=0;
     }
 
     public void AddStrum(){
-        strum=cntup+cntslap+cntdown;
-        //strm.setText("Total strums: "+Integer.toString(strum));
-        strm.setText("Strum pattern is: "+cntdown+cntup+cntslap);
-    }
+
+        strm.setText("Strum pattern is: "+strum);
+                Intent intent=new Intent(MainActivity.this, ChooseChords.class);
+                strum1=strm.getText().toString();
+                intent.putExtra("Strum Pattern: ", strum1);
+                startActivity(intent);
+                finish();
+            }
+
 
     public void openChooseChords(){
         Intent intent=new Intent(this, ChooseChords.class);
@@ -99,17 +108,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void addupstroke(){
         cntup++;
+        strum+="U";
         strm.setText("Up: "+Integer.toString(cntup));
 
     }
 
     public void adddownstroke(){
         cntdown++;
+        strum+="D";
         strm.setText("Down: "+Integer.toString(cntdown));
     }
 
     public void addslap(){
         cntslap++;
+        strum+="S";
         strm.setText("Slap: "+Integer.toString(cntslap));
     }
 }

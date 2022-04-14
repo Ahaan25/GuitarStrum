@@ -8,6 +8,18 @@
     tools:context=".ChooseChords">
 
     <Button
+        android:id="@+id/back"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="556dp"
+        android:backgroundTint="@color/white"
+        android:text="Back"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/del"
         android:layout_width="90dp"
         android:layout_height="50dp"
@@ -23,8 +35,8 @@
         android:id="@+id/addchords"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="264dp"
-        android:layout_marginTop="636dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="556dp"
         android:backgroundTint="@color/white"
         android:text="Show chords"
         android:textColor="@color/black"
@@ -211,7 +223,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextTextPersonName"
         android:layout_width="250dp"
         android:layout_height="50dp"
